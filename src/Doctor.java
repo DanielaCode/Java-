@@ -1,9 +1,11 @@
 public class Doctor {
     static int id=0;/*autoincrement because each new doctor instance need to be another id autoincremented, static would help because makes this variable as a global scope any class can use it and the value is consistend betwen all the program*/
     String name;
-    Doctor(){
-        System.out.println("ctor Doctor");
+    String speciality;
+    Doctor(String pName, String pSpecialyty){
         id++;
+        this.name = pName;
+        this.speciality = pSpecialyty;
     }
     //behaviors
     public void showName(){
