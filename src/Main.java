@@ -1,3 +1,5 @@
+import static ui.UIMenu.*;//import static ant * so I can use all the public static methods of UIMenu
+
 // Press ⇧ twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
@@ -16,5 +18,6 @@ public class Main {
 
         Doctor myDoctor3 = new Doctor();
         myDoctor3.showId();
+        showMenu();//I do not need to use the class name because of the import type I used
     }
 }
