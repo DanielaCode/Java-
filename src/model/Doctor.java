@@ -11,6 +11,12 @@ public class Doctor extends User{
     public Doctor(String pName, String pEmail){
         super(pName,pEmail);
     }
+
+    @Override
+    public String showDataUser() {
+        return null;
+    }
+
     //behaviors
     public String getSpeciality() {
         return speciality;

@@ -48,4 +48,9 @@ public class Patient extends User{//in java you can not do multiple inheritance 
     public String toString() {
         return super.toString() + "\n blood: "+blood;
     }
+
+    @Override
+    public String showDataUser() {
+        return null;
+    }
 }

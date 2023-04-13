@@ -60,4 +60,6 @@ public abstract class User {//we never create an instance of User this is becaus
     public String toString() {
         return "name: "+name+"\n email: "+email +"\n number: "+phoneNumber;
     }
+
+    public abstract String showDataUser(); //abstract methods are the only ones that are mandatory to implement on the child class
 }
