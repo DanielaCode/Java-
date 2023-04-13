@@ -14,5 +14,9 @@ public class Main {
         for (Doctor.AvailableAppointments aA: d1.getAvailableApointments()) {
             System.out.println("date: "+aA.getDate()+"time: "+aA.getTime());
         }
+
+        Patient p1= new Patient("sofi","sofi@gmail.com");
+        //here I can see the effect of use toString override
+        System.out.println(p1);
     }
 }
