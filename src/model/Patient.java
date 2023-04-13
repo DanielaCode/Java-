@@ -1,10 +1,12 @@
+package model;
+
 public class Patient extends User{//in java you can not do multiple inheritance but all in java is a child of object class that have a lot of prebuilt methods that I can use everywhere
 
     private String birthday;
     private double weight;
     private double height;
     private String blood;
-    Patient(String name, String email){
+    public Patient(String name, String email){
         super(name,email);
     }
 //to add getters and setters cmnd +n

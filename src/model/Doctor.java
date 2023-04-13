@@ -1,3 +1,5 @@
+package model;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -6,7 +8,7 @@ public class Doctor extends User{
     private String speciality;
 
     ArrayList<AvailableAppointments> aA = new ArrayList<>();
-    Doctor(String pName, String pEmail){
+    public Doctor(String pName, String pEmail){
         super(pName,pEmail);
     }
     //behaviors
