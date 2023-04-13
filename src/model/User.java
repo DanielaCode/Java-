@@ -1,6 +1,6 @@
 package model;
 
-public class User {
+public abstract class User {//we never create an instance of User this is because this class is very generic so I can put it like abstract class in abstract classes I can not create instances I can use this polymorphism model User user=new Doctor() but not new User(), sometimes in inheritance and interfaces I do not need all the methods in a child so Abstract classes solve this issue
     private int id;
     private String name;
     private String email;
