@@ -1,12 +1,21 @@
+import java.util.Date;
+
 public class Doctor {
-    static int id=0;/*autoincrement because each new doctor instance need to be another id autoincremented, static would help because makes this variable as a global scope any class can use it and the value is consistend betwen all the program*/
-    String name;
-    String email;
-    String speciality;
-    Doctor(String pName, String pSpecialyty){
+    static int id=0;
+    private String name;
+    private String email;
+    private String speciality;
+
+    /*I need to put available appointments for doctors, so I create this:*/
+    int idAvailableAppointments;
+    private Date date;
+    private String time;
+    /*and then create a collection to list all the agenda*/
+
+    Doctor(String pName, String pSpeciality){
         id++;
         this.name = pName;
-        this.speciality = pSpecialyty;
+        this.speciality = pSpeciality;
     }
     //behaviors
     public void showName(){
