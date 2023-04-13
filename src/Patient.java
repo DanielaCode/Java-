@@ -1,53 +1,14 @@
-public class Patient {
-    int id;
-    private String name;
-    private String email;
-    private String address;
-    private String phoneNumber;
+public class Patient extends User{
+
     private String birthday;
     private double weight;
     private double height;
     private String blood;
-    Patient(String pName, String pEmail){
-        this.name=pName;
-        this.email=pEmail;
+    Patient(String name, String email){
+        super(name,email);
     }
 //to add getters and setters cmnd +n
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(String phoneNumber) { //getters and setters let me validate the input value that will be assigned
-        if (phoneNumber.length()>8){
-            System.out.println("max 8 numbers");
-        }else{
-            this.phoneNumber = phoneNumber;
-        }
-    }
 
     public String getBirthday() {
         return birthday;

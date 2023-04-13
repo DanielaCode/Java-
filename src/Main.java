@@ -5,7 +5,7 @@ import static ui.UIMenu.*;
 public class Main {
     public static void main(String[] args) {
         //showMenu();
-        Doctor d1= new Doctor("Daniela","pediatry");
+        Doctor d1= new Doctor("Daniela","daniela@gmail.com");
         //nested class justification: only doctor class can use it
         d1.addAvailableApointments(new Date(),"4pm");
         d1.addAvailableApointments(new Date(),"6pm");
